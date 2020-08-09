@@ -11,6 +11,8 @@ body {
   background-color: whitesmoke;
 }
 
+/* Loader */
+
 .loader {
   position: fixed;
   top: 0;
@@ -24,9 +26,34 @@ body {
   visibility: hidden;
 }
 
+/* Main Title */
+
 .main-title {
   text-align: center;
   margin: 25px auto 15px;
   font-size: 40px;
   letter-spacing: 5px;
+}
+
+/* Image */
+
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
 }
